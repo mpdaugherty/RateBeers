@@ -1,0 +1,21 @@
+# Compiled python files
+*.pyc
+
+# Emacs temp files
+*~
+\#.*\#
+
+# OSX folder attributes
+.DS_Store
+*.bak
+
+# IDE project files
+/.pydevproject # Pydev.org
+/.settings/org.eclipse.core.resources.prefs # Eclipse
+/.idea # PyCharm
+
+# Stackdumps
+*.stackdump
+
+# Testing DB
+db.sqlite

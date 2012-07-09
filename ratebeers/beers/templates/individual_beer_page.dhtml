@@ -1,0 +1,5 @@
+{% extends "base.dhtml" %}
+
+{% block body %}
+  {% include "individual_beer.dhtml" %}
+{% endblock %}

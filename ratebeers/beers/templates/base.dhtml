@@ -1,0 +1,45 @@
+<!doctype html>
+{% load staticfiles %}
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>RateBeers - a fun and easy way to declare your love for beer</title>
+
+    <meta name="description" content="RateBeers is all about finding the best beer on planet Earth.">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" type="text/css" href="{% static "css/style.css" %}" />
+
+    {% block extra-head %}{% endblock %}
+
+  </head>
+
+  <body class="{% block body-class %}{% endblock %}" {% block body-extra %}{% endblock %}>
+    <div id="Container">
+      <h1>
+        <a href="{% url home %}" title="RateBeers">
+          <img src="{% static "img/RateBeersLogo.png" %}"/>
+        </a>
+      </h1>
+
+      <section id="Content">
+        {% block body %}
+        {% endblock %}
+      </section>
+
+      <footer>
+        <div class="info">
+          <div class="copywrite">&copy <a href="http://acheev.it">Acheev.it</a> 2012</div>
+        </div>
+
+        <img src="{% static "img/miniLogo.png" %}" />
+        <div><strong>Proudly brewed in Beijing.</strong></div>
+      </footer>
+    </div>
+  </body>
+
+</html>

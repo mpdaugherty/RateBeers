@@ -1,0 +1,7 @@
+{% extends "base.dhtml" %}
+
+{% block body %}
+  {% for beer in beers %}
+    {% include 'individual_beer.dhtml' %}
+  {% endfor %}
+{% endblock %}
