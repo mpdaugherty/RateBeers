@@ -51,7 +51,7 @@ the template, which provides data that the template can use.
 *** Templates
 
 Django templates are just HTML with a little extra syntax.  Anything
-inside of {{ }} is calculated in using the context provided by the
+inside of {{ }} is calculated using the context provided by the
 view and is output into the HTML.  Anything inside {% %} is also
 interpreted specially, but not output directly.  {% %} can be used for
 for...in loops, etc.
