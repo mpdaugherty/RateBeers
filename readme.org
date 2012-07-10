@@ -1,0 +1,69 @@
+* RateBeers
+
+RateBeers is a very simple, relatively ugly Django application.
+
+** Use Case Description
+
+Using RateBeers, you can vote for your favorite beers!  The homepage
+shows a list of popular beers, along with their current likes and
+dislikes.
+
+Clicking 'Like' or 'Dislike' will register your vote.  You can also
+click on the title of the beer to view only that beer and send the
+link to your friends.
+
+** Installation
+
+If your system has python 2.7 installed, installation should be very easy:
+
+#+BEGIN_SRC shell
+git clone <repository>
+cd <directory>
+easy_install pip
+pip install -r requirements.txt
+python manage.py runserver
+#+END_SRC
+
+You can now visit http://localhost:8000/ to view and rate your beers!
+
+** Code overview
+
+RateBeers is written in Python, using the Django framework.  This is a
+quick overview of how a Django application works:
+
+*** Models
+
+Models define the data and represent the information stored in the
+database.  We have one model, Beer, which is located in
+ratebeers/beers/models.py.
+
+*** Views
+
+Views are Python functions that perform an action or calculate a
+result in response to an HTTP request.  These are located in
+ratebeers/beers/views.py.  They are mapped to specific URLs via
+ratebeers/urls.py.
+
+Generally, a view renders a template to generate HTML at the end of
+the function.  When it does that, it passes a "context" dictionary to
+the template, which provides data that the template can use.
+
+*** Templates
+
+Django templates are just HTML with a little extra syntax.  Anything
+inside of {{ }} is calculated in using the context provided by the
+view and is output into the HTML.  Anything inside {% %} is also
+interpreted specially, but not output directly.  {% %} can be used for
+for...in loops, etc.
+
+*** Static files
+
+Images, CSS, JavaScripts, etc. are all located in ratebeers/beers/static/.
+If you add an item to the static directory, you can get its URL in a
+template via {% static path/to/item %}.
+
+** Django & Python Links
+
+- http://python.org/
+- https://docs.djangoproject.com/en/1.4/
+- https://docs.djangoproject.com/en/1.4/ref/templates/
