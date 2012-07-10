@@ -19,13 +19,13 @@ If your system has python 2.7 installed, installation should be very easy:
 #+BEGIN_SRC shell
 git clone <repository>
 cd <directory>
-easy_install pip
+sudo easy_install pip
 pip install -r requirements.txt
 python manage.py syncdb
 python manage.py runserver
 #+END_SRC
 
-You can now visit http://localhost:8000/ to view and rate your beers!
+You can now visit [[http://localhost:8000/][http://localhost:8000/]] to view and rate your beers!
 
 ** Code overview
 
