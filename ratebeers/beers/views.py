@@ -1,5 +1,6 @@
 from django.shortcuts import render_to_response
 from models import Beer
+from util import json
 
 def get_beer_score(beer):
     return beer.score
@@ -31,25 +32,31 @@ def dislike(req, beer_slug):
     beer.save()
     return render_to_response('thanks.dhtml', { 'action' : 'disliking {}'.format(beer.name) })
 
+@json
 def ajax_like(req, beer_slug):
     '''
     Adds a "like" to a beer and returns JSON.
-    NOT DONE YET
     '''
     beer = Beer.objects.get(slug=beer_slug)
     beer.num_likes = beer.num_likes + 1
     beer.save()
-    pass
+    return {
+        'success' : True,
+        'beer' : { 'num_likes': beer.num_likes, 'num_dislikes': beer.num_dislikes, }
+        }
 
+@json
 def ajax_dislike(req, beer_slug):
     '''
     Adds a "dislike" to a beer and returns JSON.
-    NOT DONE YET
     '''
     beer = Beer.objects.get(slug=beer_slug)
     beer.num_dislikes = beer.num_dislikes + 1
     beer.save()
-    pass
+    return {
+        'success' : True,
+        'beer' : { 'num_likes': beer.num_likes, 'num_dislikes': beer.num_dislikes, }
+        }
 
 def individual_beer(req, beer_slug):
     '''
