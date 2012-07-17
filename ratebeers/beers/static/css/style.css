@@ -2,6 +2,8 @@ html {
     height: 100%;
     margin: 0;
     padding: 0;
+    background-image: url('../img/bg.png');
+    font-family: monospace;
 }
 
 body {
@@ -13,6 +15,11 @@ body {
 #Container {
   min-height: 100%;
   position: relative;
+  background-color: #abc; /*#496D87;*/
+  border-right: 2px solid #496D87;
+  border-left: 2px solid #496D87;
+  width: 700px;
+  margin: auto;
 }
 
 h1 {
@@ -25,6 +32,30 @@ h1 {
     width: 600px;
     margin: auto;
     padding-bottom: 100px;
+}
+
+.beer-details {
+    min-height: 180px;
+    margin-bottom: 60px;
+}
+
+.beer-details .pic-container {
+    width: 200px;
+    float: left;
+    text-align: center;
+    margin-right: 20px;
+}
+
+h2 a {
+   color: #333;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    margin-bottom: 2px;
 }
 
 img.beer-pic {
