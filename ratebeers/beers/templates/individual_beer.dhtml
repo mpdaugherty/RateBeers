@@ -1,7 +1,7 @@
 {% load staticfiles %}
 <div>
   <h2><a href="{% url individual_beer beer_slug=beer.slug %}">{{ beer.name }}</a></h2>
-  <img src="{% static beer.pic %}" class="beer-pic"/>
+  <img src="{% static beer.pic %}" class="beer-pic">
   <dl>
     <dt>Likes</dt>
     <dd>{{ beer.num_likes }}</dd>
