@@ -1,13 +1,13 @@
 html {
-    height: 100%;
-    margin: 0;
-    padding: 0;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    height: 100%;
-    padding: 0 100px;
-    margin: 0;
+  height: 100%;
+  padding: 0 100px;
+  margin: 0;
 }
 
 #Container {
@@ -16,19 +16,19 @@ body {
 }
 
 h1 {
-    margin-top: 0;
-    padding-top: 10px;
-    text-align: center;
+  margin-top: 0;
+  padding-top: 10px;
+  text-align: center;
 }
 
 #Content {
-    width: 600px;
-    margin: auto;
-    padding-bottom: 100px;
+  width: 600px;
+  margin: auto;
+  padding-bottom: 100px;
 }
 
-img.beer-pic {
-    height: 150px;
+.beer-pic {
+  height: 150px;
 }
 
 footer {
@@ -39,26 +39,29 @@ footer {
   font-size: 12px;
   text-align: center;
 }
-footer div.info {
+
+footer .info {
   position: absolute;
   bottom: 0;
   left: 100px;
 }
-footer div.info .copywrite {
+
+footer .info .copywrite {
   float: left;
 }
-footer div.info ul.nav {
+
+footer .info .nav {
+  float: left;
   list-style: none;
   margin-bottom: 0;
-  float: left;
 }
-footer div.info ul.nav li {
+
+footer .info .nav li {
   float: left;
   margin-left: 5px;
 }
+
 footer img {
-  width: 37px;
   height: 26px;
   width: 37px;
-  height: 26px;
 }
