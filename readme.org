@@ -8,7 +8,7 @@ Using RateBeers, you can vote for your favorite beers!  The homepage
 shows a list of popular beers, along with their current likes and
 dislikes.
 
-Clicking 'Like' or 'Dislike' will register your vote.  You can also
+Clicking ‘Like’ or ‘Dislike’ will register your vote.  You can also
 click on the title of the beer to view only that beer and send the
 link to your friends.
 
@@ -46,7 +46,7 @@ ratebeers/beers/views.py.  They are mapped to specific URLs via
 ratebeers/urls.py.
 
 Generally, a view renders a template to generate HTML at the end of
-the function.  When it does that, it passes a "context" dictionary to
+the function.  When it does that, it passes a “context” dictionary to
 the template, which provides data that the template can use.
 
 *** Templates
@@ -55,7 +55,7 @@ Django templates are just HTML with a little extra syntax.  Anything
 inside of {{ }} is calculated using the context provided by the
 view and is output into the HTML.  Anything inside {% %} is also
 interpreted specially, but not output directly.  {% %} can be used for
-for...in loops, etc.
+for…in loops, etc.
 
 *** Static files
 
