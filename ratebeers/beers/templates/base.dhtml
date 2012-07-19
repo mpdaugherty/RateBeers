@@ -33,7 +33,7 @@
 
       <footer>
         <div class="info">
-          <div class="copywrite">&copy <a href="http://acheev.it">Acheev.it</a> 2012</div>
+          <div class="copywrite">&copy; <a href="http://acheev.it">Acheev.it</a> 2012</div>
         </div>
 
         <img src="{% static "img/miniLogo.png" %}">
